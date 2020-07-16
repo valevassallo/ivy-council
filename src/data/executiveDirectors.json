@@ -1,0 +1,34 @@
+{
+  "members": [
+    {
+      "name": "Adriana Purcell",
+      "role": "Executive Director",
+      "university": "University of Pennsylvania"
+    },
+    {
+      "name": "Sarah Chong",
+      "role": "Executive Director",
+      "university": "Dartmouth College"
+    },
+    {
+      "name": "Edward W. Mowinckel",
+      "role": "Executive Director",
+      "university": "Princeton University"
+    },
+    {
+      "name": "Stephen Polcyn",
+      "role": "Executive Director",
+      "university": "Princeton University"
+    },
+    {
+      "name": "Dina Chotrani",
+      "role": "Executive Director",
+      "university": "Princeton University"
+    },
+    {
+      "name": "Tanmay Khandelwal",
+      "role": "Executive Director",
+      "university": "Columbia University"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "members": [
+    {
+      "name": "Shayan Rauf",
+      "role": "Co-President",
+      "university": "Columbia University"
+    },
+    {
+      "name": "Sai Suhas Kopparapu",
+      "role": "Co-President",
+      "university": "Columbia University"
+    },
+    {
+      "name": "Juan No",
+      "role": "Vice President of Internal Affairs",
+      "university": "Princeton University"
+    },
+    {
+      "name": "Tanmay Khandelwal",
+      "role": "Vice President of External Affairs",
+      "university": "Columbia University"
+    },
+    {
+      "name": "Margaret Lu",
+      "role": "Vice President of Technology/Marketing",
+      "university": "University of Pennsylvania"
+    },
+    {
+      "name": "Phillip Batov",
+      "role": "Vice President of Finance",
+      "university": "University of Pennsylvania"
+    },
+    {
+      "name": "Valerie Aguilar Dellisanti",
+      "role": "Vice President of Philanthropy",
+      "university": "Brown University"
+    },
+    {
+      "name": "Adam Goudjil",
+      "role": "Vice President of Policy",
+      "university": "University of Pennsylvania"
+    }
+  ]
+}
