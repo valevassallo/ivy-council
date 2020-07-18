@@ -18,7 +18,7 @@ function History() {
           <div className="col-12">
             <h1 className="display-4">Timeline of Ivy Council</h1>
           </div>
-          <div className="col-12">
+          <div className="col-12 timeline-description">
             <h5>Check us through the years - more to be coming soon!</h5>
           </div>
         </div>

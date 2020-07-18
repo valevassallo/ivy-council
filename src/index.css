@@ -118,6 +118,14 @@ code {
   padding: 3rem;
 }
 
+.paragraph-no-margin {
+  margin-bottom: 4px;
+}
+
+.timeline-description {
+  padding-top: 0px !important; 
+}
+
 .fa-facebook {
   color: #3b5998;
 }

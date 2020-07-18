@@ -10,7 +10,7 @@ function GetInvolved() {
         <div className="row">
           <div className="col-md-12 col-md-offset-2">
             <h1 className="display-4">Help Us! Donate!</h1>
-            <p className="paddingBottom45">
+            <p className="paragraph-no-margin">
               We’ll email you the details, so you can support the project you choose
             </p>
           </div>
