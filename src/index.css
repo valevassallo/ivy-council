@@ -98,9 +98,10 @@ code {
   margin-bottom: 1rem;
 }
 
-.fa-users, .fa-star, .fa-heart {
+.fa-users, .fa-thumbs-up, .fa-handshake {
   font-size: 4em;
   margin: 1rem;
+  color: #80b918;
 }
 
 .fun {

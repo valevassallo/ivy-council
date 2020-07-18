@@ -25,11 +25,11 @@ function Home() {
             <h1 className="display-4">Our Mission</h1>
           </div>
           <div className="col-xs-12 col-sm-6 col-md-4">
-            <i style={{color: "red"}} class="fa fa-heart"></i>
+            <i class="fa fa-handshake"></i>
             <h3>Collaboration among Ivy League schools</h3>
           </div>
           <div className="col-xs-12 col-sm-6 col-md-4">
-            <i style={{color: "yellow"}} class="fa fa-star"></i>
+            <i class="fa fa-thumbs-up"></i>
             <h3>Create a positive impact in our communities</h3>
           </div>
           <div className="col-sm-12 col-md-4">
