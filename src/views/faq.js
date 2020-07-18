@@ -7,8 +7,8 @@ function Faq() {
   return (
     <>
       <div className="container-fluid">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
+        <div className="row">
+          <div className="col-md-8 col-md-offset-2">
             <h1 className="display-4">Frequently Asked Questions</h1>
           </div>
         </div>

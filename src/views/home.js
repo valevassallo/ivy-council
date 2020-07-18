@@ -28,15 +28,15 @@ function Home() {
             <h1 className="display-4">Our Mission</h1>
           </div>
           <div className="col-xs-12 col-sm-6 col-md-4">
-            <i class="fa fa-handshake"></i>
+            <i className="fa fa-handshake"></i>
             <h3>Collaboration among Ivy League schools</h3>
           </div>
           <div className="col-xs-12 col-sm-6 col-md-4">
-            <i class="fa fa-thumbs-up"></i>
+            <i className="fa fa-thumbs-up"></i>
             <h3>Create a positive impact in our communities</h3>
           </div>
           <div className="col-sm-12 col-md-4">
-            <i class="fa fa-users"></i>
+            <i className="fa fa-users"></i>
             <h3>Develop professional skills through engagement</h3>
           </div>
         </div>

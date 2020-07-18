@@ -5,32 +5,32 @@ import Table from "react-bootstrap/Table";
 function DonationsTracker() {
   return (
     <>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 col-md-offset-2">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-12 col-md-offset-2">
             <h1 className="display-4">Donations Tracker</h1>
           </div>
         </div>
-        <div class="row">
-          <h5 class="col text-center">Total Value of Donations</h5>
-          <h5 class="col text-center">We've Reached</h5>
+        <div className="row">
+          <h5 className="col text-center">Total Value of Donations</h5>
+          <h5 className="col text-center">We've Reached</h5>
         </div>
-        <div class="row">
+        <div className="row">
           <h1 className="col text-center display-4">$100000000</h1>
           <h1 className="col text-center display-4">1234567890</h1>
         </div>
-        <div class="row">
-          <h5 className="col text-center"></h5>
+        <div className="row">
+          <h5 className="col text-center"></h5> 
           <div className="col text-center">
             <img src="src/img/people.png" alt="People" />
           </div>
         </div>
-        <div class="row">
+        <div className="row">
           <h5 className="col text-center"></h5>
           <h5 className="col text-center">in N countries</h5>
         </div>
-        <h3 class="col text-left">Our Numbers</h3>
-        <div class="row">
+        <h3 className="col text-left">Our Numbers</h3>
+        <div className="row">
           <div className="col text-left">
             <Table striped bordered>
               <tbody>

@@ -6,11 +6,11 @@ import Button from "react-bootstrap/Button";
 function GetInvolved() {
   return (
     <>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 col-md-offset-2">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-12 col-md-offset-2">
             <h1 className="display-4">Help Us! Donate!</h1>
-            <p class="paddingBottom45">
+            <p className="paddingBottom45">
               We’ll email you the details, so you can support the project you choose
             </p>
           </div>
