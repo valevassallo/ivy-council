@@ -2,6 +2,7 @@ import React from 'react'
 import CarouselComponent from '../components/Carousel'
 import Board from '../components/Board'
 
+import IvyBanners from '../img/ivybanners.png'
 import executiveBoard from '../data/executiveBoard.json'
 import executiveDirectors from '../data/executiveDirectors.json'
 
@@ -18,7 +19,7 @@ function Home() {
             <p>The Ivy Council is a <a style={{color: "#222"}} href="https://en.wikipedia.org/wiki/501(c)(3)_organization">501(c)3</a> federal tax-exempt organization of student government leaders, student organization leaders, and students at large from the colleges and universities of the Ivy League. The Ivy Council was established in 1993 by members of the Ivy League student governments in order to facilitate effective communication between the student governments of their respective institutions and to provide a unified voice for the Ivy League student governments.</p>
           </div>
           <div className="col-12">
-            <img src="src/img/ivybanners.png" alt="Ivy Banners" />
+            <img src={IvyBanners} alt="Ivy Banners" />
           </div>
         </div>
       </div>

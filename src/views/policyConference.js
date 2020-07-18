@@ -1,12 +1,14 @@
 import React from 'react'
 
+import IPC from '../img/ipc.png'
+
 function PolicyConference() {
   return (
     <>
       <div className="container-fluid">
         <div className="row welcome text-center">
           <div className="col-12">
-            <img src="src/img/ipc.png" alt="IPC" />
+            <img src={IPC} alt="IPC" />
           </div>
           <div className="col-12">
             <h1 className="display-4">About IPC</h1>

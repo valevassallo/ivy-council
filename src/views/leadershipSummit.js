@@ -1,12 +1,14 @@
 import React from 'react'
 
+import ILS from '../img/ils.png'
+
 function LeadershipSummit() {
   return (
     <>
       <div className="container-fluid">
         <div className="row welcome text-center">
           <div className="col-12">
-            <img src="src/img/ils.png" alt="ILS" />
+            <img src={ILS} alt="ILS" />
           </div>
           <div className="col-12">
             <h1 className="display-4">About ILS</h1>

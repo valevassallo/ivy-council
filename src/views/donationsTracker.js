@@ -1,11 +1,13 @@
 import React from 'react'
-
 import Table from "react-bootstrap/Table";
+
+import People from '../img/people.png'
+import World from '../img/world.png'
 
 function DonationsTracker() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid padding">
         <div className="row">
           <div className="col-md-12 col-md-offset-2">
             <h1 className="display-4">Donations Tracker</h1>
@@ -22,7 +24,7 @@ function DonationsTracker() {
         <div className="row">
           <h5 className="col text-center"></h5> 
           <div className="col text-center">
-            <img src="src/img/people.png" alt="People" />
+            <img src={People} alt="People" />
           </div>
         </div>
         <div className="row">
@@ -54,7 +56,7 @@ function DonationsTracker() {
             </Table>
           </div>
           <div className="col text-center">
-            <img src="src/img/world.png" alt="World" />
+            <img src={World} alt="World" />
           </div>
         </div>
       </div>
