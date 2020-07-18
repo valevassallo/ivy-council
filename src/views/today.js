@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Today() {
-  return <h1>what are we doing right now?</h1>
+  return <h1>this figma page was blank owo</h1>
 }
 
 export default Today;

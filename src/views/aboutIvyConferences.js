@@ -1,7 +1,65 @@
 import React from 'react'
 
-function AboutIvyConferences() {
-  return <h1>all info here</h1>
+import Table from "react-bootstrap/Table";
+
+function DonationsTracker() {
+  return (
+    <>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-md-offset-2">
+            <h1 className="display-4">Donations Tracker</h1>
+          </div>
+        </div>
+        <div class="row">
+          <h5 class="col text-center">Total Value of Donations</h5>
+          <h5 class="col text-center">We've Reached</h5>
+        </div>
+        <div class="row">
+          <h1 className="col text-center display-4">$100000000</h1>
+          <h1 className="col text-center display-4">1234567890</h1>
+        </div>
+        <div class="row">
+          <h5 className="col text-center"></h5>
+          <div className="col text-center">
+            <img src="src/img/people.png" alt="People" />
+          </div>
+        </div>
+        <div class="row">
+          <h5 className="col text-center"></h5>
+          <h5 className="col text-center">in N countries</h5>
+        </div>
+        <h3 class="col text-left">Our Numbers</h3>
+        <div class="row">
+          <div className="col text-left">
+            <Table striped bordered>
+              <tbody>
+                <tr>
+                  <td>Donors</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Institutions</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Amount of Donations</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>Most Funded Project</td>
+                  <td>The Best Project</td>
+                </tr>
+              </tbody>
+            </Table>
+          </div>
+          <div className="col text-center">
+            <img src="src/img/world.png" alt="World" />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default AboutIvyConferences;
+export default DonationsTracker;
