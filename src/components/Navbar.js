@@ -23,7 +23,7 @@ function Navbar() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="/browse-projects">Browse Project</Dropdown.Item>
+                  <Dropdown.Item href="/browse-projects">Browse Projects</Dropdown.Item>
                   <Dropdown.Item href="/nominate-project">Nominate A Project</Dropdown.Item>
                   <Dropdown.Item href="/donations-tracker-ivy-fund">Donations Tracker</Dropdown.Item>
                 </Dropdown.Menu>

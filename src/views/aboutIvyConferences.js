@@ -1,64 +1,28 @@
 import React from 'react'
 
-import Table from "react-bootstrap/Table";
+import ILS from '../img/ils.png'
+import IPC from '../img/ipc.png'
 
 function DonationsTracker() {
   return (
-    <>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-12 col-md-offset-2">
-            <h1 className="display-4">Donations Tracker</h1>
+    <div className="container-fluid">
+      <div className="row welcome text-center">
+        <div className="col-12">
+          <h1 className="display-4">ABOUT IVY COUNCIL CONFERENCES</h1>
+        </div>
+        <div className="col-12">
+          <p>The Ivy Leadership Summit (ILS) is an annual two-day conference hosted by the Ivy Council to bring together students from the eight Ivy League universities along with leaders from the business, government, academics, and non-profit sectors of society. The conference is usually held in the fall and its location is rotated each year through the campuses of the schools in the Ivy League.</p>
+        </div>
+        <div className="padding row text-center col-12">
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img src={IPC} alt="IPC" />
           </div>
-        </div>
-        <div className="row">
-          <h5 className="col text-center">Total Value of Donations</h5>
-          <h5 className="col text-center">We've Reached</h5>
-        </div>
-        <div className="row">
-          <h1 className="col text-center display-4">$100000000</h1>
-          <h1 className="col text-center display-4">1234567890</h1>
-        </div>
-        <div className="row">
-          <h5 className="col text-center"></h5>
-          <div className="col text-center">
-            <img src="src/img/people.png" alt="People" />
-          </div>
-        </div>
-        <div className="row">
-          <h5 className="col text-center"></h5>
-          <h5 className="col text-center">in N countries</h5>
-        </div>
-        <h3 className="col text-left">Our Numbers</h3>
-        <div className="row">
-          <div className="col text-left">
-            <Table striped bordered>
-              <tbody>
-                <tr>
-                  <td>Donors</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <td>Institutions</td>
-                  <td>7</td>
-                </tr>
-                <tr>
-                  <td>Amount of Donations</td>
-                  <td>12</td>
-                </tr>
-                <tr>
-                  <td>Most Funded Project</td>
-                  <td>The Best Project</td>
-                </tr>
-              </tbody>
-            </Table>
-          </div>
-          <div className="col text-center">
-            <img src="src/img/world.png" alt="World" />
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img src={ILS} alt="ILS" />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
