@@ -11,7 +11,7 @@ function CarouselComponent() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h1>First slide label</h1>
+          <h1>Project One</h1>
           <h3>Nulla vitae elit libero, a pharetra augue mollis interdum.</h3>
         </Carousel.Caption>
       </Carousel.Item>
@@ -23,7 +23,7 @@ function CarouselComponent() {
         />
 
         <Carousel.Caption>
-          <h1>Second slide label</h1>
+          <h1>Project Two</h1>
           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         </Carousel.Caption>
       </Carousel.Item>
@@ -35,7 +35,7 @@ function CarouselComponent() {
         />
 
         <Carousel.Caption>
-          <h1>Third slide label</h1>
+          <h1>Project Three</h1>
           <h3>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</h3>
         </Carousel.Caption>
       </Carousel.Item>
