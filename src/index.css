@@ -76,9 +76,21 @@ code {
   border: 1px solid rgb(28, 121, 50);
 }
 
+.filter-btn {
+  margin-right: 8px;
+}
+
 .jumbotron {
   padding: 1rem;
   border-radius: 0;
+}
+
+.card-deck {
+  margin-bottom: 16px;
+}
+
+.individual-card:hover {
+  cursor: pointer;
 }
 
 .padding {
