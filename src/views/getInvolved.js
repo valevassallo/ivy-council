@@ -29,17 +29,24 @@ function GetInvolved() {
             <Form.Control type="name" placeholder="Name" />
           </Form.Group>
 
-          <Form.Group controlId="formBasicOrganizationName">
+          {/* <Form.Group controlId="formBasicOrganizationName">
             <Form.Label>Name of Your Organization</Form.Label>
             <Form.Control
               type="organizationname"
               placeholder="Organization Name"
             />
-          </Form.Group>
+          </Form.Group> */}
 
-          <Form.Group controlId="formBasicProjectName">
-            <Form.Label>Project You Want to Support</Form.Label>
-            <Form.Control type="name" placeholder="Project Name" />
+          <Form.Group controlId="formBasicOrganizationName">
+            <Form.Label>Organization You Want to Support</Form.Label>
+            <Form.Control as="select">
+              <option>--------------</option>
+              <option>Organization 1</option>
+              <option>Organization 2</option>
+              <option>Organization 3</option>
+              <option>Organization 4</option>
+              <option>Organization 5</option>
+            </Form.Control>
           </Form.Group>
 
           <Button variant="primary" type="submit">
