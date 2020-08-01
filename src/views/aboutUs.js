@@ -1,15 +1,18 @@
 import React from 'react'
-import CarouselComponent from '../components/Carousel'
+
 import Board from '../components/Board'
+import ProjectModal from '../components/Modal'
 
 import IvyBanners from '../img/ivybanners.png'
 import executiveBoard from '../data/executiveBoard.json'
 import executiveDirectors from '../data/executiveDirectors.json'
+import steeringBoard from '../data/steeringBoard.json'
 
-function Home() {
+function AboutUs() {
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <>
-      <CarouselComponent />
       <div className="container-fluid">
         <div className="row welcome text-center">
           <div className="col-12">
@@ -64,8 +67,24 @@ function Home() {
         </div>
         <Board members={executiveDirectors.members} colMdSize="2" />
       </div>
+      <div className="container-fluid">
+        <div className="row welcome text-center">
+          <div className="col-12">
+            <h1 className="display-4">Meet the Ivy Council Steering Board</h1>
+          </div>
+          <div className="col-12">
+            <p>The Steering Board are composed of head delegates that are elected by their local IVC chapter to represent their respective schools. Due to impending head delegate elections, more would be added in the weeks to come!</p>
+          </div>
+        </div>
+        <Board members={steeringBoard.members} colMdSize="4" />
+      </div>
+
+      <ProjectModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </>
   )
 }
 
-export default Home;
+export default AboutUs;

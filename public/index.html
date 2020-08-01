@@ -50,6 +50,29 @@
       crossorigin="anonymous"
     />
     <title>Ivy Council</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBvxpJa92Exn6IWvx1frnJlceMbutBI5DM",
+        authDomain: "ivy-council.firebaseapp.com",
+        databaseURL: "https://ivy-council.firebaseio.com",
+        projectId: "ivy-council",
+        storageBucket: "ivy-council.appspot.com",
+        messagingSenderId: "489198452948",
+        appId: "1:489198452948:web:58e65085621c224d5dbb41",
+        measurementId: "G-S1PJV5VYN3"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

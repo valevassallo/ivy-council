@@ -2,7 +2,8 @@ import React from 'react';
 import { Router } from "@reach/router"
 
 import Navbar from './components/Navbar'
-import Home from './views/home'
+import HomeIvyFund from './views/homeIvyFund'
+import AboutUs from './views/aboutUs'
 import Faq from './views/faq'
 import GetInvolved from './views/getInvolved'
 import BrowseProjects from './views/browseProjects'
@@ -13,16 +14,18 @@ import LeadershipSummit from './views/leadershipSummit'
 import PolicyConference from './views/policyConference'
 import History from './views/history'
 import Today from './views/today'
+import Project from './views/projectPage'
 
 function App() {
   return (
     <>
       <Navbar />
       <Router>
-        <Home path="/" />
+        <HomeIvyFund path="/" />
+        <AboutUs path="/about-us" />
         <Faq path="/faq" />
         <GetInvolved path="/get-involved" />
-        <BrowseProjects path="/browse-projects" />
+        <BrowseProjects path="/projects" />
         <DonationsTracker path="/donations-tracker-ivy-fund" />
         <NominateProject path="/nominate-project" />
         <AboutIvyConferences path="/about-ivy-conferences" />
@@ -30,6 +33,7 @@ function App() {
         <PolicyConference path="/policy-conference" />
         <History path="/history" />
         <Today path="/today" />
+        <Project path="/projects/:projectId" />
       </Router>
     </>
   );
