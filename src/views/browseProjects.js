@@ -15,40 +15,82 @@ import Col from 'react-bootstrap/Col'
 
 function BrowseProjects() {
   const [filters, setFilters] = React.useState([])
+  const [searchValue, setSearchValue] = React.useState()
 
   const showProjects = () => {
     if (!!projectsData.projects) {
-      if (!!filters.length) {
+      if (searchValue) {
         const filteredProjects = projectsData.projects.filter(project => {
-          return filters.includes(project.topic)
+          return project["title"].toLowerCase().includes(searchValue)
         })
 
+        const results = filteredProjects.length
+
         return(
-          <CardDeck style={{justifyContent: "center"}}>
-            {filteredProjects.map((project, idx) => {
-              return(
-                <Link to={`/projects/${project.id}`}>
-                  <ProjectCard project={project} key={`${project.title}-${idx}`} />
-                </Link>
-              )
-            })}
-          </CardDeck>
+          <>
+            <div className="row">
+              <h6 className="col text-left">{results} results found</h6>
+            </div>
+            <CardDeck style={{justifyContent: "center"}}>
+              {filteredProjects.map((project, idx) => {
+                return(
+                  <Link to={`/projects/${project.id}`}>
+                    <ProjectCard project={project} key={`${project.title}-${idx}`} />
+                  </Link>
+                )
+              })}
+            </CardDeck>
+          </>
+        )
+      } else if (!!filters.length) {
+        const filteredProjects = projectsData.projects.filter(project => {
+          return (filters.includes(project.topic) || filters.includes(project.region))
+        })
+
+        const results = filteredProjects.length
+
+        return(
+          <>
+            <div className="row">
+              <h6 className="col text-left">{results} results found</h6>
+            </div>
+            <CardDeck style={{justifyContent: "center"}}>
+              {filteredProjects.map((project, idx) => {
+                return(
+                  <Link to={`/projects/${project.id}`}>
+                    <ProjectCard project={project} key={`${project.title}-${idx}`} />
+                  </Link>
+                )
+              })}
+            </CardDeck>
+          </>
         )
       } else {
         return(
-          <CardDeck style={{justifyContent: "center"}}>
-            {projectsData.projects.map((project, idx) => {
-              return(
-                <Link to={`/projects/${project.id}`}>
-                  <ProjectCard project={project} key={`${project.title}-${idx}`} />
-                </Link>
-              )
-            })}
-          </CardDeck>
+          <>
+            <div className="row">
+              <h6 className="col text-left">{projectsData.projects.length} results found</h6>
+            </div>
+            <CardDeck style={{justifyContent: "center"}}>
+              {projectsData.projects.map((project, idx) => {
+                return(
+                  <Link to={`/projects/${project.id}`}>
+                    <ProjectCard project={project} key={`${project.title}-${idx}`} />
+                  </Link>
+                )
+              })}
+            </CardDeck>
+          </>
         )
       }
     }
   }
+
+  const handleSearch = (e) => {
+    setSearchValue(e.target.value)
+  }
+
+  console.log("search value", searchValue)
 
   return (
     <div className="container-fluid">
@@ -70,17 +112,18 @@ function BrowseProjects() {
           <div className="row">
             <div className="col text-center">
                 <Form inline>
-                  <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                  <FormControl
+                    type="text"
+                    placeholder="Search"
+                    value={searchValue}
+                    onChange={handleSearch}
+                    className="mr-sm-2" />
                   <Button variant="success">Search</Button>
                 </Form>
             </div>
           </div>
 
           <div style={{marginTop: 16}}>
-            <div className="row">
-              <h6 className="col text-left">NUMBER results found</h6>
-            </div>
-
             {showProjects()}
           </div>
         </Col>
