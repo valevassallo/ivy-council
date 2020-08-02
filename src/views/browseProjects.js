@@ -90,15 +90,13 @@ function BrowseProjects() {
     setSearchValue(e.target.value)
   }
 
-  console.log("search value", searchValue)
-
   return (
     <div className="container-fluid">
       <div className="row">
-        <Col xs={3} id="sidebar-wrapper">      
+        <Col xs={3} md={3} lg={3} xl={3} id="sidebar-wrapper">      
           <Sidebar filters={filters} setFilters={setFilters} />
         </Col>
-        <Col  xs={9} id="page-content-wrapper">
+        <Col xs={9} md={9} lg={9} xl={9} id="page-content-wrapper">
           <div className="row">
             <div className="col-md-9 col-md-offset-2">
               <h1 className="display-4">Our Projects</h1>
