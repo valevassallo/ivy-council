@@ -49,7 +49,7 @@ function Project({projectId}) {
                       <h5 style={{textAlign: "center"}}>{project[0].orgName}</h5>
                       <h6> </h6>
                     </div>
-                    <a href={project[0].orgLink} class="btn float-right project-org-button">CONTACT INNOVATOR</a> 
+                    <a href={project[0].orgLink} class="btn float-right project-org-button">CONTACT ORGANIZATION</a> 
                   </div>
                 </div>
               </div>

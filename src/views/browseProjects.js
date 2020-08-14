@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from "@reach/router";
 
 import projectsData from '../data/projectsData.json'
+import { useFirebaseApp, useFirestoreCollection } from 'reactfire';
+import 'firebase/firestore';
 
 import Sidebar from '../components/Sidebar'
 import ProjectCard from '../components/ProjectCard'
@@ -16,6 +18,12 @@ import Col from 'react-bootstrap/Col'
 function BrowseProjects() {
   const [filters, setFilters] = React.useState([])
   const [searchValue, setSearchValue] = React.useState()
+
+  const firebaseApp = useFirebaseApp();
+  const projectsRef = firebaseApp.firestore().collection('projects');
+  const projectsObj = useFirestoreCollection(projectsRef).docs.map(d => ({id: d.id, ...d.data()}));
+
+  // console.log("PROJECTS OBJ: ", projectsObj)
 
   const showProjects = () => {
     if (!!projectsData.projects) {
@@ -34,7 +42,7 @@ function BrowseProjects() {
             <CardDeck style={{justifyContent: "center"}}>
               {filteredProjects.map((project, idx) => {
                 return(
-                  <Link to={`/projects/${project.id}`}>
+                  <Link key={idx} to={`/projects/${project.id}`}>
                     <ProjectCard project={project} key={`${project.title}-${idx}`} />
                   </Link>
                 )
@@ -74,7 +82,7 @@ function BrowseProjects() {
             <CardDeck style={{justifyContent: "center"}}>
               {projectsData.projects.map((project, idx) => {
                 return(
-                  <Link to={`/projects/${project.id}`}>
+                  <Link key={idx} to={`/projects/${project.id}`}>
                     <ProjectCard project={project} key={`${project.title}-${idx}`} />
                   </Link>
                 )

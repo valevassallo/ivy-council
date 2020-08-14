@@ -5,9 +5,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { FirebaseAppProvider, SuspenseWithPerf } from 'reactfire';
+import firebaseConfig from './config/fbConfig'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <FirebaseAppProvider firebaseConfig={firebaseConfig}>
+      <SuspenseWithPerf fallback={<p>Loading...</p>}>
+        <App />
+      </SuspenseWithPerf>
+    </FirebaseAppProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
