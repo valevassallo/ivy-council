@@ -14,6 +14,12 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
+              <Link className="nav-link" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about-us">About Us</Link>
+            </li>
+            <li className="nav-item">
               <Dropdown>
                 <Dropdown.Toggle className="nav-link dropdown-custom" id="dropdown-basic">
                   Ivy Fund
@@ -25,9 +31,6 @@ function Navbar() {
                   <Dropdown.Item href="/donations-tracker-ivy-fund">Donations Tracker</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about-us">About Us</Link>
             </li>
             <li className="nav-item">
               <Dropdown>
@@ -55,7 +58,7 @@ function Navbar() {
               </Dropdown>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/get-involved">Help us! Get involved!</Link>
+              <Link className="nav-link" to="/get-involved">Contact</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/faq">FAQ</Link>
