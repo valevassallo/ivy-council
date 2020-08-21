@@ -5,7 +5,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 
 function Navbar() {
   return(
-    <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
       <div className="container-fluid">
         <a className="navbar-brand" href="/"><img className="logo" src={Logo} alt="logo" /></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -33,7 +33,7 @@ function Navbar() {
               </Dropdown>
             </li>
             <li className="nav-item">
-              <Dropdown>
+              {/* <Dropdown>
                 <Dropdown.Toggle className="nav-link dropdown-custom" id="dropdown-basic">
                   Conferences
                 </Dropdown.Toggle>
@@ -43,19 +43,8 @@ function Navbar() {
                   <Dropdown.Item href="/policy-conference">Ivy Policy Conference</Dropdown.Item>
                   <Dropdown.Item href="/leadership-summit">Ivy Leadership Summit</Dropdown.Item>
                 </Dropdown.Menu>
-              </Dropdown>
-            </li>
-            <li className="nav-item">
-              <Dropdown>
-                <Dropdown.Toggle className="nav-link dropdown-custom" id="dropdown-basic">
-                  Our Impact
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  <Dropdown.Item href="/history">History</Dropdown.Item>
-                  <Dropdown.Item href="/today">Today</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+              </Dropdown> */}
+              <Link className="nav-link" to="/about-ivy-conferences">Ivy Conferences</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/get-involved">Contact</Link>

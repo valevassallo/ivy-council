@@ -1,7 +1,6 @@
 import React from 'react';
 import { Router } from "@reach/router"
 
-import Navbar from './components/Navbar'
 import HomeIvyFund from './views/homeIvyFund'
 import AboutUs from './views/aboutUs'
 import Faq from './views/faq'
@@ -19,7 +18,6 @@ import Project from './views/projectPage'
 function App() {
   return (
     <>
-      <Navbar />
       <Router>
         <HomeIvyFund path="/" />
         <AboutUs path="/about-us" />

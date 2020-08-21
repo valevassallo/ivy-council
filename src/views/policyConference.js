@@ -1,10 +1,13 @@
 import React from 'react'
 
+import Navbar from '../components/Navbar'
+
 import IPC from '../img/ipc.png'
 
 function PolicyConference() {
   return (
     <>
+      <Navbar />
       <div className="container-fluid">
         <div className="row welcome text-center">
           <div className="col-12">

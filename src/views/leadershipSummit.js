@@ -1,10 +1,12 @@
 import React from 'react'
 
+import Navbar from '../components/Navbar'
 import ILS from '../img/ils.png'
 
 function LeadershipSummit() {
   return (
     <>
+      <Navbar />
       <div className="container-fluid">
         <div className="row welcome text-center">
           <div className="col-12">

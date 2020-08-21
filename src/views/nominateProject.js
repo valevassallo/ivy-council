@@ -3,15 +3,17 @@ import React from 'react'
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+import Navbar from '../components/Navbar'
+
 function NominateProject() {
   return (
     <>
+      <Navbar />
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-12 col-md-offset-2">
             <h1 className="display-4">
-              Do you know an organization with an incredible project? Nominate
-              it here!
+              Nominate a project
             </h1>
           </div>
         </div>

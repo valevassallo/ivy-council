@@ -3,9 +3,12 @@ import React from 'react'
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
+import Navbar from '../components/Navbar'
+
 function Faq() {
   return (
     <>
+      <Navbar />
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-8 col-md-offset-2">
@@ -13,7 +16,7 @@ function Faq() {
           </div>
         </div>
         <Accordion>
-          <Card>
+          <Card className="bg-dark text-white">
             <Accordion.Toggle as={Card.Header} eventKey="0">
               Question 1
             </Accordion.Toggle>
@@ -21,7 +24,7 @@ function Faq() {
               <Card.Body>Hello! I'm a solution.</Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card>
+          <Card className="bg-dark text-white">
             <Accordion.Toggle as={Card.Header} eventKey="1">
               Question 2
             </Accordion.Toggle>
@@ -29,7 +32,7 @@ function Faq() {
               <Card.Body>Hello! I'm a solution.</Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card>
+          <Card className="bg-dark text-white">
             <Accordion.Toggle as={Card.Header} eventKey="2">
               Question 3
             </Accordion.Toggle>
@@ -37,7 +40,7 @@ function Faq() {
               <Card.Body>Hello! I'm a solution.</Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card>
+          <Card className="bg-dark text-white">
             <Accordion.Toggle as={Card.Header} eventKey="3">
               Question 4
             </Accordion.Toggle>
@@ -45,7 +48,7 @@ function Faq() {
               <Card.Body>Hello! I'm a solution.</Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card>
+          <Card className="bg-dark text-white">
             <Accordion.Toggle as={Card.Header} eventKey="4">
               Question 5
             </Accordion.Toggle>
@@ -53,7 +56,7 @@ function Faq() {
               <Card.Body>Hello! I'm a solution.</Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card>
+          <Card className="bg-dark text-white">
             <Accordion.Toggle as={Card.Header} eventKey="5">
               Question 6
             </Accordion.Toggle>

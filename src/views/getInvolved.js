@@ -3,9 +3,12 @@ import React from 'react'
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+import Navbar from '../components/Navbar'
+
 function GetInvolved() {
   return (
     <>
+      <Navbar />
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-12 col-md-offset-2">

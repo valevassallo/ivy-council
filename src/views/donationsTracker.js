@@ -1,12 +1,15 @@
 import React from 'react'
 import Table from "react-bootstrap/Table";
 
+import Navbar from '../components/Navbar'
+
 import People from '../img/people.png'
 import World from '../img/world.png'
 
 function DonationsTracker() {
   return (
     <>
+      <Navbar />
       <div className="container-fluid padding">
         <div className="row">
           <div className="col-md-12 col-md-offset-2">

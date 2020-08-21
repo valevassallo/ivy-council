@@ -4,8 +4,10 @@ import Nav from 'react-bootstrap/Nav'
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
+import RangeSlider from 'react-bootstrap-range-slider';
 
 function Sidebar({filters, setFilters}) {
+  const [budget, setBudget] = React.useState(0)
   const handleChange = e => {
     // e.preventDefault();
 
@@ -45,7 +47,7 @@ function Sidebar({filters, setFilters}) {
 
   return (
     <>
-      <Nav className="col-md-12 d-none d-md-block bg-light sidebar"
+      <Nav className="col-md-12 d-none d-md-block bg-dark sidebar"
       activeKey="/home"
       onSelect={selectedKey => alert(`selected ${selectedKey}`)}
       >
@@ -57,7 +59,7 @@ function Sidebar({filters, setFilters}) {
         </Nav.Item>
         <Nav.Item>
           <Accordion>
-            <Card>
+            <Card className="bg-dark text-white">
               <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
                 Topics
               </Accordion.Toggle>
@@ -78,7 +80,7 @@ function Sidebar({filters, setFilters}) {
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <Card>
+            <Card className="bg-dark text-white">
               <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
                 Regions
               </Accordion.Toggle>
@@ -96,6 +98,25 @@ function Sidebar({filters, setFilters}) {
                       </div>
                     ))}
                   </Form>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card className="bg-dark text-white">
+              <Accordion.Toggle as={Card.Header} variant="link" eventKey="2">
+                Budget
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="2">
+                <Card.Body>
+                  <RangeSlider
+                    value={budget}
+                    onChange={changeEvent => setBudget(changeEvent.target.value)}
+                    min={0}
+                    max={10000}
+                    tooltip="auto"
+                    tooltipPlacement="top"
+                    size="sm"
+                    tooltipLabel={value => `$ ${value}`}
+                  />
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
