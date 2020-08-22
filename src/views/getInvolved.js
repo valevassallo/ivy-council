@@ -9,53 +9,73 @@ function GetInvolved() {
   return (
     <>
       <Navbar />
-      <div className="container-fluid">
+      <div className="container-fluid padding">
         <div className="row">
-          <div className="col-md-12 col-md-offset-2">
-            <h1 className="display-4">Contact Us</h1>
+          <h1 style={{margin: 0, paddingBottom: 0}} className="display-4 col-md-12">Contact Us</h1>
+          <div className="col-md-6 col-md-offset-2">
             <p className="paragraph-no-margin">
-              We’ll email you the details, so you can support the project you choose
+              Contact the Ivy Council
             </p>
+            <Form>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label className="form-label-contact">Your Email</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Text className="text-muted">
+                  We'll never share your email with anyone else.
+                </Form.Text>
+              </Form.Group>
+
+              <Form.Group controlId="formBasicName">
+                <Form.Label className="form-label-contact">Your Full Name</Form.Label>
+                <Form.Control type="name" placeholder="Name" />
+              </Form.Group>
+
+              <Form.Group controlId="formBasicProjectName">
+                <Form.Label className="form-label-contact">Message</Form.Label>
+                <Form.Control as="textarea" rows="3" />
+              </Form.Group>
+
+              <Button variant="success" type="submit">
+                Submit
+              </Button>
+            </Form>
+          </div>
+          <div className="col-md-6 col-md-offset-2">
+            <p className="paragraph-no-margin">
+              Fill this form if you want to support a project
+            </p>
+            <Form>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label className="form-label-contact">Your Email</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Text className="text-muted">
+                  We'll never share your email with anyone else.
+                </Form.Text>
+              </Form.Group>
+
+              <Form.Group controlId="formBasicName">
+                <Form.Label className="form-label-contact">Your Full Name</Form.Label>
+                <Form.Control type="name" placeholder="Name" />
+              </Form.Group>
+
+              <Form.Group controlId="formBasicProjectName">
+                <Form.Label className="form-label-contact">Project You Want to Support</Form.Label>
+                <Form.Control as="select">
+                  <option>--------------</option>
+                  <option>Project 1</option>
+                  <option>Project 2</option>
+                  <option>Project 3</option>
+                  <option>Project 4</option>
+                  <option>Project 5</option>
+                </Form.Control>
+              </Form.Group>
+
+              <Button variant="success" type="submit">
+                Submit
+              </Button>
+            </Form>
           </div>
         </div>
-        <Form>
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label>Your Email</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
-          </Form.Group>
-
-          <Form.Group controlId="formBasicName">
-            <Form.Label>Your Full Name</Form.Label>
-            <Form.Control type="name" placeholder="Name" />
-          </Form.Group>
-
-          {/* <Form.Group controlId="formBasicOrganizationName">
-            <Form.Label>Name of Your Organization</Form.Label>
-            <Form.Control
-              type="organizationname"
-              placeholder="Organization Name"
-            />
-          </Form.Group> */}
-
-          <Form.Group controlId="formBasicOrganizationName">
-            <Form.Label>Organization You Want to Support</Form.Label>
-            <Form.Control as="select">
-              <option>--------------</option>
-              <option>Organization 1</option>
-              <option>Organization 2</option>
-              <option>Organization 3</option>
-              <option>Organization 4</option>
-              <option>Organization 5</option>
-            </Form.Control>
-          </Form.Group>
-
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
-        </Form>
       </div>
     </>
   );

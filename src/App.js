@@ -1,6 +1,7 @@
 import React from 'react';
 import { Router } from "@reach/router"
 
+import Footer from './components/Footer'
 import HomeIvyFund from './views/homeIvyFund'
 import AboutUs from './views/aboutUs'
 import Faq from './views/faq'
@@ -33,6 +34,7 @@ function App() {
         <Today path="/today" />
         <Project path="/projects/:projectId" />
       </Router>
+      <Footer />
     </>
   );
 }
