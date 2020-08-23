@@ -20,6 +20,7 @@ import Col from 'react-bootstrap/Col'
 function BrowseProjects() {
   const [filters, setFilters] = React.useState([])
   const [searchValue, setSearchValue] = React.useState()
+  const [budgetFilter, setBudgetFilter] = React.useState(0)
 
   const firebaseApp = useFirebaseApp();
   const projectsRef = firebaseApp.firestore().collection('projects');
@@ -75,6 +76,29 @@ function BrowseProjects() {
             </CardDeck>
           </>
         )
+      } else if (budgetFilter > 0) {
+        const filteredProjects = projectsData.projects.filter(project => {
+          return (project.budget < budgetFilter)
+        })
+
+        const results = filteredProjects.length
+
+        return(
+          <>
+            <div className="row">
+              <h6 className="col text-left">{results} results found</h6>
+            </div>
+            <CardDeck style={{justifyContent: "center"}}>
+              {filteredProjects.map((project, idx) => {
+                return(
+                  <Link to={`/projects/${project.id}`}>
+                    <ProjectCard project={project} key={`${project.title}-${idx}`} />
+                  </Link>
+                )
+              })}
+            </CardDeck>
+          </>
+        )
       } else {
         return(
           <>
@@ -106,7 +130,7 @@ function BrowseProjects() {
       <div className="container-fluid">
         <div className="row">
           <Col xs={3} md={3} lg={3} xl={3} id="sidebar-wrapper">
-            <Sidebar filters={filters} setFilters={setFilters} />
+            <Sidebar filters={filters} setFilters={setFilters} budgetFilter={budgetFilter} setBudgetFilter={setBudgetFilter} />
           </Col>
           <Col xs={9} md={9} lg={9} xl={9} id="page-content-wrapper">
             <div className="row">

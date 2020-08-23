@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import RangeSlider from 'react-bootstrap-range-slider';
 
-function Sidebar({filters, setFilters}) {
+function Sidebar({filters, setFilters, budgetFilter, setBudgetFilter}) {
   const [budget, setBudget] = React.useState(0)
   const handleChange = e => {
     // e.preventDefault();
@@ -107,9 +107,11 @@ function Sidebar({filters, setFilters}) {
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="2">
                 <Card.Body>
+                  <span>Budget: ${budgetFilter}</span>
                   <RangeSlider
-                    value={budget}
-                    onChange={changeEvent => setBudget(changeEvent.target.value)}
+                    style={{zIndex: 1000}}
+                    value={budgetFilter}
+                    onChange={changeEvent => setBudgetFilter(changeEvent.target.value)}
                     min={0}
                     max={10000}
                     tooltip="auto"

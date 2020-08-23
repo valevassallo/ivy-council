@@ -45,6 +45,8 @@ function Project({projectId}) {
                     <p>{project[0].description}</p>
                     <h1>Region</h1>
                     <p>{project[0].region}</p>
+                    <h1>Budget</h1>
+                    <p>{project[0].budget}</p>
                   </div>
                   <div className="col-12 col-sm-5 col-md-4 col-lg-4 col-xl-4 xs-pading">
                     <div class="right-side-info clearfix">

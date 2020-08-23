@@ -11,7 +11,8 @@
       "orgLogo": "https://s3.ap-south-1.amazonaws.com/hsdreams1/pins/2019/02/big/534f78f45b2bcd3015c199bdf1bee058.jpeg",
       "orgName": "Organization Name :D",
       "orgLink": "www.youtube.com",
-      "orgDescription": "An organization willing to help!"
+      "orgDescription": "An organization willing to help!",
+      "budget": 50
     },
     {
       "id": "2",
@@ -24,7 +25,8 @@
       "orgLogo": "https://dynamic.brandcrowd.com/asset/logo/ddd1acea-4288-4d04-91d0-a95af423ac75/logo?v=4",
       "orgName": "Organization Name :D",
       "orgLink": "www.youtube.com",
-      "orgDescription": "An organization willing to help!"
+      "orgDescription": "An organization willing to help!",
+      "budget": 100
     },
     {
       "id": "3",
@@ -37,7 +39,8 @@
       "orgLogo": "https://s3.ap-south-1.amazonaws.com/hsdreams1/pins/2019/02/big/534f78f45b2bcd3015c199bdf1bee058.jpeg",
       "orgName": "Organization Name :D",
       "orgLink": "www.youtube.com",
-      "orgDescription": "An organization willing to help!"
+      "orgDescription": "An organization willing to help!",
+      "budget": 3545
     },
     {
       "id": "4",
@@ -50,7 +53,8 @@
       "orgLogo": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/75b53a69853253.5bbe0d80ddcb2.gif",
       "orgName": "Organization Name :D",
       "orgLink": "www.youtube.com",
-      "orgDescription": "An organization willing to help!"
+      "orgDescription": "An organization willing to help!",
+      "budget": 9999
     },
     {
       "id": "5",
@@ -63,7 +67,8 @@
       "orgLogo": "https://s3.ap-south-1.amazonaws.com/hsdreams1/pins/2019/02/big/534f78f45b2bcd3015c199bdf1bee058.jpeg",
       "orgName": "Organization Name :D",
       "orgLink": "www.youtube.com",
-      "orgDescription": "An organization willing to help!"
+      "orgDescription": "An organization willing to help!",
+      "budget": 1654
     },
     {
       "id": "6",
@@ -76,7 +81,8 @@
       "orgLogo": "https://s3.ap-south-1.amazonaws.com/hsdreams1/pins/2019/02/big/534f78f45b2bcd3015c199bdf1bee058.jpeg",
       "orgName": "Organization Name :D",
       "orgLink": "www.youtube.com",
-      "orgDescription": "An organization willing to help!"
+      "orgDescription": "An organization willing to help!",
+      "budget": 4545 
     }
   ]
 }
