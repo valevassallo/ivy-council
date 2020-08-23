@@ -9,7 +9,7 @@ function Faq() {
   return (
     <>
       <Navbar />
-      <div className="container-fluid">
+      <div className="container-fluid padding">
         <div className="row">
           <div className="col-md-8 col-md-offset-2">
             <h1 className="display-4">Frequently Asked Questions</h1>
