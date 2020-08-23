@@ -41,14 +41,13 @@ code {
 .dropdown-custom {
   background-color: transparent !important;
   border: none !important;
+  outline: none !important;
 }
 
 .home-cover {
   background:url("https://admissions.blog/wp-content/uploads/2019/11/Screen-Shot-2019-11-05-at-8.29.15-PM.png");
   background-size: 100% 100%;
   height: 100%;
-  /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
 }
 
 .home-cover-text {

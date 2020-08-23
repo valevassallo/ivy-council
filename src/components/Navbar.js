@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from '../img/council.png'
 import { Link } from '@reach/router'
 import Dropdown from 'react-bootstrap/Dropdown'
+import Button from 'react-bootstrap/Button'
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
 
 function Navbar() {
   return(
@@ -20,10 +22,11 @@ function Navbar() {
               <Link className="nav-link" to="/about-us">About Us</Link>
             </li>
             <li className="nav-item">
-              <Dropdown>
-                <Dropdown.Toggle className="nav-link dropdown-custom" id="dropdown-basic">
-                  Ivy Fund
-                </Dropdown.Toggle>
+              <Dropdown as={ButtonGroup}>
+                <Link to="/projects">
+                  <Button className="nav-link dropdown-custom">Ivy Fund</Button>
+                </Link>
+                <Dropdown.Toggle split className="nav-link dropdown-custom" id="dropdown-split-basic" />
 
                 <Dropdown.Menu>
                   <Dropdown.Item href="/projects">Browse Projects</Dropdown.Item>
@@ -33,17 +36,6 @@ function Navbar() {
               </Dropdown>
             </li>
             <li className="nav-item">
-              {/* <Dropdown>
-                <Dropdown.Toggle className="nav-link dropdown-custom" id="dropdown-basic">
-                  Conferences
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  <Dropdown.Item href="/about-ivy-conferences">About Ivy Conferences</Dropdown.Item>
-                  <Dropdown.Item href="/policy-conference">Ivy Policy Conference</Dropdown.Item>
-                  <Dropdown.Item href="/leadership-summit">Ivy Leadership Summit</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown> */}
               <Link className="nav-link" to="/about-ivy-conferences">Ivy Conferences</Link>
             </li>
             <li className="nav-item">
